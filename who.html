@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <br>
+    <a href=index.html><img src = "2000px-Go-home.svg.png" height = 40></a>
+    <h1>Who We Are......</h1>
+    <p>
+      We are two 11 and 12 year-old kids named Zazie and Sophie who offer the neighborhood a bakery and delivery service. We both live here and love baking bread, and decided to put the two together. 
+    </p>
+    <h1>What We Do......</h1>
+    <p>The UT Bread Basket makes fresh bread every Saturday morning, and delivers it fresh out of the oven for you! </p>
+    <button onclick="button()">Menu</button>
+    <ul id=list>
+      <li>Rosemary White Bread - $5.50
+        <p style="margin:0 0">white flour, Italian seasoning, pepper, rosemary, sugar, salt, yeast, water, olive oil</p>
+    </li>
+      <br>
+      <li>Pita Bread - $1.00
+      </li><p style= "margin: 0 0">white flour, salt, sugar, yeast, water, olive oil</p>
+      <br>
+      <li>Whole Wheat Bread with Seeds - $6.00
+      </li><p style="margin:0 0">whole wheat flour, sunflower seeds, pumpkin seeds, Italian seasoning, pepper, sugar, salt, yeast, water, olive oil, gluten</p>
+      <br>
+     <li>Half Whole Wheat, Half White - $6.00 
+      </li><p style="margin:0 0">whole wheat flour, white flour, sunflower seeds, pumpkin seeds, Italian seasoning, pepper, sugar, salt, yeast, water, olive oil</p></ul>
+    
+  </body>
+  <script>
+  const button = function() {
+    console.log(document.getElementById("list").style.display)
+    if (document.getElementById("list").style.display==="block"){ 
+      document.getElementById("list").style.display="none"
+    } else { 
+      document.getElementById("list").style.display="block"    
+      }
+  }</script>
+</html>
